@@ -1,0 +1,9 @@
+-------------------------
+FACTURA No. 2
+PRODUCTOS
+Nombre: Andres
+Direccion: asdf
+Costo Neto 0
+IVA 0.0
+Costo Total 0.0
+-------------------------
