@@ -120,7 +120,6 @@ public class Restaurante {
             linea = br.readLine();
         }
         br.close();
-
     }
 
     public void cargarCombos(String nombreArchivo) throws IOException {
