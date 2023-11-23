@@ -29,7 +29,7 @@ public class Pedido implements Producto {
 
         int precioRelaivo = getPrecioTotalPedido() + nuevoItem.getPrecio();
         if (precioRelativo > 150000){
-            throws new ValorMaximoException("El producto " + nuevoProducto.getNombre() + " supera el tope de precio");
+            throws new ValorMaximoException("El producto " + nuevoProducto.getNombre() + " supera el tope de precio")
         }
 
         listaProductos.add(nuevoItem);
