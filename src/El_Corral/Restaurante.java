@@ -104,6 +104,7 @@ public class Restaurante {
         while (linea != null) {
             String[] partes = linea.split(";");
             ProductoMenu nuevoProducto = new ProductoMenu(partes[0], Integer.parseInt(partes[1]));
+            
             menu.add(nuevoProducto);
             linea = br.readLine();
         }
