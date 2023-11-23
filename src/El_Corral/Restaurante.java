@@ -92,6 +92,12 @@ public class Restaurante {
         while (linea != null) {
             String[] partes = linea.split(";");
             Ingrediente nuevoIngrediente = new Ingrediente(partes[0], Integer.parseInt(partes[1]));
+
+            //Exception
+            if (ingredientes.contains(nuevoIngrediente)){
+                throw new IngredienteRepetidoException("Ups! Hay un ingrediente repetido" + nuevoIngrediente.getNombre())
+            }
+
             ingredientes.add(nuevoIngrediente);
             linea = br.readLine();
         }
@@ -107,7 +113,7 @@ public class Restaurante {
             
             //Exception
             if (menu.contains(nuevoProducto)){
-                throw 
+                throw new ProductoRepetidoException("Ups! Hay un produto repetido" + nuevoProducto.getNombre())
             }
 
             menu.add(nuevoProducto);
