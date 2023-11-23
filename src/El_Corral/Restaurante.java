@@ -105,6 +105,11 @@ public class Restaurante {
             String[] partes = linea.split(";");
             ProductoMenu nuevoProducto = new ProductoMenu(partes[0], Integer.parseInt(partes[1]));
             
+            //Exception
+            if (menu.contains(nuevoProducto)){
+                throw 
+            }
+
             menu.add(nuevoProducto);
             linea = br.readLine();
         }
